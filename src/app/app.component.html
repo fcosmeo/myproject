@@ -57,10 +57,11 @@
       <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
       <ng-template ngbTabContent>
         <p>This is the content of the second tab!</p>
-        <p><ngb-progressbar type="success" [value]="25"></ngb-progressbar></p>
+        <p><ngb-progressbar type="success" [value]="aaa"></ngb-progressbar></p>
         <p><ngb-progressbar type="info" [value]="50"></ngb-progressbar></p>
         <p><ngb-progressbar type="warning" [value]="75"></ngb-progressbar></p>
         <p><ngb-progressbar type="danger" [value]="100"></ngb-progressbar></p>
+        <button (click)="avanza()">Añadir prenda</button>
       </ng-template>
     </ngb-tab>
     <ngb-tab title="Disabled" [disabled]="true">
